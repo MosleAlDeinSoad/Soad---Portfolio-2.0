@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mosle Al Dein Soad — Technical Project Manager leading delivery across the PRISM platform ecosystem for BAT Bangladesh." />
+    <title>Mosle Al Dein Soad — Technical Project Manager</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!--
+      Static form so Netlify's build-time form detector can find it
+      (Netlify scans the built HTML, not the React bundle, for forms).
+      The real, interactive form lives in src/components/Contact.jsx
+      and submits to this same form name via fetch.
+    -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
